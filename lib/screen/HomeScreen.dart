@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Container(
+            Container(           // Image container
               width: 500,
               height: 300,
               decoration: BoxDecoration(
@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 border: Border.all(color: Colors.teal, width: 2),
               ),
             ),
-            Container(
+            Container(          // Text container
               height: 300,
               padding: EdgeInsets.all(10),
               child: Column(
@@ -83,12 +83,6 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               height: 900,
             ),
-            // Container(
-            //   height: 300,
-            // ),
-            // Container(
-            //   height: 300,
-            // ),
           ],
         ),
       ),

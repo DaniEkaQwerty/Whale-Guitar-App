@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:whale/screen/HomeScreen.dart';
+// import 'package:whale/screen/HomeScreen.dart';
+import 'package:whale/screen/login_screen.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _SplashState extends State<Splash> {
     super.initState();
     waveSound();
     Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>LoginScreen()));
     });
   }
 
