@@ -16,12 +16,12 @@ class SigninScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/images/whale.png', height: 120, width: 120),
+              Image.asset('assets/images/wave-white.png', height: 120, width: 120),
               SizedBox(width: 30),
               Text(
                 "Sign In Page",
                 style: TextStyle(
-                  color: Color.fromARGB(255, 98, 98, 98),
+                  color: Color.fromARGB(255, 51, 128, 95),
                   fontSize: 40,
                   fontWeight: FontWeight.bold,
                 ),

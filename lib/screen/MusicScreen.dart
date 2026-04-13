@@ -1,29 +1,7 @@
-import 'dart:async';
-import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-// import 'package:whale/screen/HomeScreen.dart';
-import 'package:whale/screen/login_screen.dart';
 
-class Splash extends StatefulWidget {
-  @override
-  State<Splash> createState() => _SplashState();
-}
-
-class _SplashState extends State<Splash> {
-  @override
-  void initState() {
-    super.initState();
-    waveSound();
-    Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) =>LoginScreen()));
-    });
-  }
-
-  final AudioPlayer wave = new AudioPlayer();
-
-  void waveSound() async {
-    await wave.play(AssetSource('audio/wave2.mp3'));
-  } 
+class Musicscreen extends StatelessWidget {
+  const Musicscreen({super.key});
 
   @override
   Widget build(BuildContext context) {
